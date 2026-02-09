@@ -1,0 +1,173 @@
+import { Product, Category, Review } from '../types';
+
+export const categories: Category[] = [
+  { id: '1', name: 'Ropa de mujer', icon: 'shirt' },
+  { id: '2', name: 'Ropa de hombre', icon: 'shirt' },
+  { id: '3', name: 'Joyas', icon: 'gem' },
+  { id: '4', name: 'Acesorios', icon: 'watch' },
+  { id: '5', name: 'Zapatos', icon: 'footprints' },
+  { id: '6', name: 'Ropa para niños', icon: 'shirt' },
+  { id: '7', name: 'Bolsas', icon: 'shopping-bag' },
+  { id: '8', name: 'Venta', icon: 'badge-percent' },
+];
+
+export const products: Product[] = [
+  {
+    id: '1',
+    title: 'Diamond Engagement Ring',
+    description: '14K White Gold 1 Carat Diamond Solitaire Ring',
+    price: 2499.99,
+    discountPercentage: 10,
+    rating: 4.9,
+    stock: 15,
+    brand: 'Elegant Jewels',
+    category: 'Jewelry',
+    thumbnail: 'https://images.pexels.com/photos/1457801/pexels-photo-1457801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1457801/pexels-photo-1457801.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '101',
+      name: 'Luxury Jewelry Co.',
+      rating: 4.9,
+    },
+  },
+  {
+    id: '2',
+    title: 'Summer Floral Dress',
+    description: 'Women\'s Casual Floral Print Summer Dress',
+    price: 59.99,
+    discountPercentage: 15,
+    rating: 4.7,
+    stock: 45,
+    brand: 'Style Haven',
+    category: 'Women\'s Clothing',
+    thumbnail: 'https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '102',
+      name: 'Fashion Forward',
+      rating: 4.8,
+    },
+  },
+  {
+    id: '3',
+    title: 'Men\'s Classic Suit',
+    description: 'Two-Piece Slim Fit Business Suit',
+    price: 299.99,
+    rating: 4.8,
+    stock: 20,
+    brand: 'Gentleman\'s Choice',
+    category: 'Men\'s Clothing',
+    thumbnail: 'https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/1096849/pexels-photo-1096849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '103',
+      name: 'Premium Menswear',
+      rating: 4.9,
+    },
+  },
+  {
+    id: '4',
+    title: 'Pearl Necklace Set',
+    description: 'Freshwater Pearl Necklace and Earring Set',
+    price: 199.99,
+    discountPercentage: 20,
+    rating: 4.7,
+    stock: 25,
+    brand: 'Pearl & Grace',
+    category: 'Jewelry',
+    thumbnail: 'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '104',
+      name: 'Elegant Accessories',
+      rating: 4.8,
+    },
+  },
+  {
+    id: '5',
+    title: 'Leather Handbag',
+    description: 'Genuine Leather Designer Handbag',
+    price: 159.99,
+    rating: 4.6,
+    stock: 30,
+    brand: 'Luxe Bags',
+    category: 'Acesorios',
+    thumbnail: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/904350/pexels-photo-904350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '105',
+      name: 'Designer Boutique',
+      rating: 4.7,
+    },
+  },
+  {
+    id: '6',
+    title: 'Gold Chain Bracelet',
+    description: '18K Gold Plated Chain Link Bracelet',
+    price: 89.99,
+    discountPercentage: 10,
+    rating: 4.8,
+    stock: 40,
+    brand: 'Golden Touch',
+    category: 'Jewelry',
+    thumbnail: 'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    images: [
+      'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      'https://images.pexels.com/photos/248077/pexels-photo-248077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    ],
+    seller: {
+      id: '106',
+      name: 'Jewelry Artisans',
+      rating: 4.9,
+    },
+  },
+];
+
+export const reviews: Record<string, Review[]> = {
+  '1': [
+    {
+      id: 'r1',
+      userId: 'u1',
+      userName: 'Emily Johnson',
+      userAvatar: 'https://i.pravatar.cc/150?img=1',
+      rating: 5,
+      comment: 'Absolutely stunning ring! The diamond sparkles beautifully and the craftsmanship is exceptional.',
+      date: '2024-02-15',
+    },
+    {
+      id: 'r2',
+      userId: 'u2',
+      userName: 'Michael Chen',
+      userAvatar: 'https://i.pravatar.cc/150?img=2',
+      rating: 5,
+      comment: 'Perfect engagement ring. My fiancée loves it!',
+      date: '2024-02-10',
+    },
+  ],
+  '2': [
+    {
+      id: 'r3',
+      userId: 'u3',
+      userName: 'Sarah Wilson',
+      userAvatar: 'https://i.pravatar.cc/150?img=3',
+      rating: 5,
+      comment: 'Beautiful dress! The fabric is high quality and the fit is perfect.',
+      date: '2024-02-05',
+    },
+  ],
+};
